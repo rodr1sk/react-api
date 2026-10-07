@@ -1,0 +1,19 @@
+[project]
+name = "api-login"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "thadorise", email = "rodri.smedeiross@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]==0.141.1",
+]
+
+[project.scripts]
+api-login = "api_login:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
