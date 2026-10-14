@@ -74,3 +74,11 @@ button:hover {
   background: #eef0fe;
   border-radius: 4px;
 }
+
+/* link para trocar entre o login e o cadastro */
+
+.troca {
+  color: #4f46e5;
+  font-size: 0.9rem;
+  text-align: center;
+}

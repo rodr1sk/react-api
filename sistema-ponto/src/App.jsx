@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Login from './Login';
+import Cadastro from "./Cadastro";
 import Home from "./Home";
 import RotaPrivada from "./RotaPrivada";
 import NaoEncontrada from "./NaoEncontrada";
@@ -8,6 +9,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
+      {/* a Home so aparece se o guardiao deixar */}
       <Route path="/home" element={
         <RotaPrivada><Home /></RotaPrivada>
       } />

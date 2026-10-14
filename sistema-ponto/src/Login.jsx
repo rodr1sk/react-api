@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -79,6 +79,9 @@ function Login() {
         {erro && <p className="erro">{erro}</p>}
 
         <button type="submit">Entrar</button>
+
+        {/* leva para o cadastro sem recarregar a pagina */}
+        <Link to="/cadastro" className="troca">Criar uma conta</Link>
       </form>
     </div>
   );
